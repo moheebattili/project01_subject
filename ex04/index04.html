@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+
+    <form>
+      <p>
+        <label for="fullname">Full Name:</label><br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          required
+          minlength="3"
+        />
+      </p>
+
+      <p>
+        <label for="email">Email :</label><br />
+        <input type="email" id="email" name="email" required />
+      </p>
+
+      <p>
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="8"
+        />
+      </p>
+
+      <p>
+        <strong>Experience Level:</strong><br />
+        <input
+          type="radio"
+          id="beginner"
+          name="experience"
+          value="beginner"
+          required
+        />
+        <label for="beginner">Beginner</label><br />
+
+        <input
+          type="radio"
+          id="intermediate"
+          name="experience"
+          value="intermediate"
+        />
+        <label for="intermediate">Intermediate</label><br />
+
+        <input type="radio" id="advanced" name="experience" value="advanced" />
+        <label for="advanced">Advanced</label>
+      </p>
+
+      <p>
+        <label for="country">Preferred Programming Track:</label><br />
+        <select id="country" name="track" required>
+          <option value="">-- Please choose an option --</option>
+          <option value="frontend">Front-End Development</option>
+          <option value="backend">Back-End Development</option>
+          <option value="fullstack">Full-Stack Development</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="bio">Short Bio or Motivation:</label><br />
+        <textarea
+          id="bio"
+          name="bio"
+          rows="4"
+          cols="50"
+          required
+          minlength="10"
+        ></textarea>
+      </p>
+
+      <p>
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">I agree to the terms and conditions</label>
+      </p>
+
+      <p>
+        <button type="submit">Register</button>
+      </p>
+    </form>
+  </body>
+</html>
